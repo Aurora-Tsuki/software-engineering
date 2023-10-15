@@ -1,0 +1,17 @@
+// 给项目提供scss全局变量
+
+// 定义全局的字体颜色
+$color: red;
+
+// 定义左侧的菜单栏的宽度
+$base-menu-width: 260px;
+$base-menu-min-width: 50px;
+// 定义左侧菜单栏的背景颜色
+$base-menu-background: #001529;
+// 左侧菜单栏的logo高度设置
+$base-menu-logo-height: 50px;
+// 左侧菜单栏logo右侧文字大小
+$base-logo-title-fontSize: 20px;
+
+// 顶部导航的高度
+$base-tabbar-height: 100px;
