@@ -14,6 +14,15 @@ dependencies:
   element-plus:
     specifier: ^2.4.0
     version: 2.4.0(vue@3.3.4)
+  idcard:
+    specifier: ^4.1.1
+    version: 4.1.1
+  is-chinese-phone-number:
+    specifier: ^0.1.9
+    version: 0.1.9
+  pinia:
+    specifier: ^2.1.7
+    version: 2.1.7(vue@3.3.4)
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -2781,6 +2790,10 @@ packages:
     engines: {node: '>=14.18.0'}
     dev: true
 
+  /idcard@4.1.1:
+    resolution: {integrity: sha512-IfuWI1bI/IohizSggg8xxXdJ3qID2yW6eUlHf3XEmB0+iBEab8BQky9lU2UVLv7BjmDxYbA8kjXTR3G3l8yj5g==}
+    dev: false
+
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
@@ -2898,6 +2911,10 @@ packages:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /is-chinese-phone-number@0.1.9:
+    resolution: {integrity: sha512-yy4X7tlL2NYPZRPf+B/LLwnBHaZiQ3HpJchSyci6Ffue1UGlui4cCpyH6vQM9Sx5QQAg9TMZZ3f5Br3h5BsSSw==}
+    dev: false
 
   /is-core-module@2.13.0:
     resolution: {integrity: sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==}
@@ -3742,6 +3759,23 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
     dev: true
+
+  /pinia@2.1.7(vue@3.3.4):
+    resolution: {integrity: sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.5.1
+      vue: 3.3.4
+      vue-demi: 0.14.6(vue@3.3.4)
+    dev: false
 
   /posix-character-classes@0.1.1:
     resolution: {integrity: sha512-xTgYBc3fuo7Yt7JbiuFxSYGToMoz8fLoE6TC9Wx1P/u+LfeThMOAqmuyECnlBaaJb+u1m9hHiXUEtwW4OzfUJg==}

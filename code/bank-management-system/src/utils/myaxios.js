@@ -1,7 +1,6 @@
 import axios from "axios";
 import { ElMessage } from "element-plus";
 
-
 //创建axios实例
 let myaxios = axios.create({
     baseURL: import.meta.env.VITE_APP_BASE_API,
@@ -12,6 +11,11 @@ let myaxios = axios.create({
 
 //请求拦截器
 myaxios.interceptors.request.use(config => {
+    // 获取token，可以从用户仓库中获取，也可以直接从localStorage中获取
+    const token = localStorage.getItem('token');
+    if (token) {
+        config.headers.Authorization = token;
+    }
     return config;
 });
 
@@ -41,8 +45,7 @@ myaxios.interceptors.response.use((response) => {
     }
     ElMessage({
         type: 'error',
-        message: msg
-    })
-    return Promise.reject(error);
+        message: error
+    });
 });
 export default myaxios;

@@ -7,6 +7,7 @@ import 'virtual:svg-icons-register';
 import App from './App.vue';
 import globalComponent from './components/index';
 import router from './router/index.js';
+import store from './store/index.js';
 import '@/styles/index.scss';
 
 const app = createApp(App);
@@ -16,6 +17,7 @@ app.use(ElementPlus, {
 });
 app.use(globalComponent);
 app.use(router);
+app.use(store);
 // 注册element-plus中所有的icon组件
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     app.component(key, component);
